@@ -9,6 +9,9 @@ let mutliply = (num: number) => {
 }
 
 mutliply(6)
+///////////////////////////////////////
+
+// array []
 
 // implict
 
@@ -20,11 +23,48 @@ str.push("x")
 console.log(str)
 
 // explict
-let nus:number[] = []
+let nus: number[] = []
 nus.push(5)
 console.log(nus)
 
 // read only arrays
-let nur:readonly number[]=[1,2,3]
+let nur: readonly number[] = [1, 2, 3]
 
 //  if its is a read only yo should not alter the array table a anytime so typescript is a strict mode
+
+/////////////////////////////////////////
+
+//obj {}
+// implict
+
+let employee = {
+    name: "test",
+    age: 30,
+    perm: true
+}
+
+employee.age = 35
+console.log(employee)
+
+// explict
+type Employee = {
+    name:string,age:number,perm:boolean
+}
+
+let emp:Employee= {
+    name: "test",
+    age: 4,
+    perm: false
+}
+
+// opotionals
+type Emp = {
+    name:string,age?:number,perm:boolean
+}
+
+let Emp:Emp= {
+    name: "test",
+    perm: false
+}
+
+// ? is optional
