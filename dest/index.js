@@ -41,3 +41,16 @@ let Emp = {
     perm: false
 };
 // ? is optional
+///////////////////////////////
+// implict union types
+let unionArr = ["hello", 1, true];
+unionArr.push("world");
+unionArr.push(5);
+unionArr.push(false);
+console.log(unionArr);
+// explict
+let union = ["hello", 1, true];
+union.push("world");
+union.push(5);
+union.push(false);
+console.log(union);

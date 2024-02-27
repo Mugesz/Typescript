@@ -48,10 +48,10 @@ console.log(employee)
 
 // explict
 type Employee = {
-    name:string,age:number,perm:boolean
+    name: string, age: number, perm: boolean
 }
 
-let emp:Employee= {
+let emp: Employee = {
     name: "test",
     age: 4,
     perm: false
@@ -59,12 +59,29 @@ let emp:Employee= {
 
 // opotionals
 type Emp = {
-    name:string,age?:number,perm:boolean
+    name: string, age?: number, perm: boolean
 }
 
-let Emp:Emp= {
+let Emp: Emp = {
     name: "test",
     perm: false
 }
 
 // ? is optional
+///////////////////////////////
+
+// implict union types
+
+let unionArr = ["hello", 1, true]
+unionArr.push("world")
+unionArr.push(5)
+unionArr.push(false)
+console.log(unionArr)
+
+// explict
+
+let union : (string | number | boolean)[]  = ["hello", 1, true]
+union.push("world")
+union.push(5)
+union.push(false)
+console.log(union)
